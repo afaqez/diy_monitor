@@ -7,8 +7,8 @@ function App() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      // Here you would add your ESP32 endpoint
-      await fetch('YOUR_ESP32_ENDPOINT', {
+   
+      await fetch('http://192.168.1.50/display', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
